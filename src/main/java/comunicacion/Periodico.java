@@ -15,7 +15,7 @@ public class Periodico extends Escrito{
 
 	@Override
 	public int palabrasTotales(int palabrasPagina) {
-		return this.getPaginas()*10;
+		return this.getPaginas()*palabrasPagina*10;
 	}
 
 	@Override
@@ -25,7 +25,7 @@ public class Periodico extends Escrito{
 
 	@Override
 	public String toString() {
-		return this.getOrigen()+"\n"+this.getTitulo()+"\n"+this.getAutor()+"\n"+this.getPaginas()+"\n"+this.getFecha()+"\n"+this.getPrimicia()+"\n"+this.getPrimicia();
+		return this.getOrigen()+"\n"+this.getTitulo()+"\n"+this.getAutor()+"\n"+this.getPaginas()+"\n"+this.getFecha()+"\n"+this.getPrimicia();
 	}
 
 	public String getFecha() {
